@@ -4,14 +4,12 @@
 
 #include "StateSzachownica.h"
 
+// Returns state's hash for easy comparison
 long long int StateSzachownica::getHash() {
-
-    //normalise();
-
     long long h = 0;
-    int c = 0;
+
     for (auto i : board) {
-        h += i.first * i.second * i.second ;
+        h += (i.first + 1) * (i.second + 1) * (i.second + 1);
     }
 
     return h;
@@ -22,7 +20,6 @@ int StateSzachownica::getHeuristic() {
 }
 
 bool StateSzachownica::isEqual(State *s) {
-
     StateSzachownica *ss = static_cast<StateSzachownica *>(s);
     ss->normalise();
     normalise();
@@ -48,6 +45,7 @@ void StateSzachownica::initRand(int seed) {
     for (int a = 0; a < n * n; a++) {
         ar[a] = 0;
     }
+
     vector<pair<int, int> > list;
     while (count) {
         int x = rand() % n;
@@ -57,6 +55,7 @@ void StateSzachownica::initRand(int seed) {
             list.push_back(make_pair(x, y));
         }
     }
+
     board = list;
     delete ar;
 }
@@ -66,43 +65,39 @@ StateSzachownica::StateSzachownica(const StateSzachownica &c) {
     board = c.board;
 }
 
+// Returns number of NOT properly ordered queens
 int StateSzachownica::getCollisions() {
     int *xs = new int[n];
     int *ys = new int[n];
-    int *diagsr = new int[n];// \ '
-    int *diagsl = new int[n];// /
+    int *diagsr = new int[2 * n - 1]; // \ diagonal
+    int *diagsl = new int[2 * n - 1]; // / diagonal
 
     memset(xs, 0, n);
     memset(ys, 0, n);
-    memset(diagsr, 0, n);
-    memset(diagsl, 0, n);
+    memset(diagsr, 0, 2 * n - 1);
+    memset(diagsl, 0, 2 * n - 1);
+
+    for (auto i: board) {
+        xs[i.first]++;
+        ys[i.second]++;
+        diagsr[i.first + i.second]++;
+        diagsl[i.first - i.second + n - 1]++;
+    }
 
     int collisions = 0;
     for (auto i: board) {
-
-        int collides = 0;
-
-        if (xs[i.first]++)
-            collides++;
-
-        if (ys[i.second]++)
-            collides++;
-
-        if (i.first - i.second > 0)
-            if (diagsr[i.first - i.second]++)
-                collides++;
-
-        if (n - 1 - i.first - i.second > 0)
-            if (diagsl[n - 1 - i.first - i.second]++)
-                collides++;
-
-        if (collides)collisions++;
+          if (xs[i.first] > 1 ||
+              ys[i.second] > 1 ||
+              diagsr[i.first + i.second] > 1 ||
+              diagsl[i.first - i.second + n - 1] > 1)
+            collisions++;
     }
+
     return collisions;
 }
 
 bool StateSzachownica::move(unsigned int which, unsigned int where) {
-    if (which >= n)return false;
+    if (which >= n) return false;
     if (where >= 8) return false;
 
     pair<int, int> chess = board.at(which);
@@ -153,8 +148,9 @@ bool StateSzachownica::move(unsigned int which, unsigned int where) {
             board.at(which) = chess;
             return true;
         }
-    } else
-        return false;
+    }
+
+    return false;
 }
 
 void StateSzachownica::normalise() {
@@ -164,12 +160,12 @@ void StateSzachownica::normalise() {
         } else if (left.second == right.second) {
             return left.first < right.first;
         }
+
         return false;
     });
 }
 
 void StateSzachownica::print() {
-
     int *ar = new int[n*n];
     for (int b = 0; b < n*n; b++) {
         ar[b]=0;
@@ -179,9 +175,6 @@ void StateSzachownica::print() {
     for(auto i : board){
         ar[i.first+n*i.second]=count++;
     }
-
-    int c = n * n;
-
 
     cout<<getHash()<<" "<<getHeuristic()<<endl;
 
