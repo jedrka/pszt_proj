@@ -5,16 +5,16 @@
 		<Option title="pszt1"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="pszt1">
@@ -24,18 +24,20 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++/backward"/>
+					<Add directory="C:/Users/jedrek/ClionProjects/pszt1/allegro-5.0.10-mingw-4.7.0/include"/>
+					<Add directory="C:/Users/jedrek/ClionProjects/pszt1/SFML-2.4.1/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 pszt1"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 pszt1"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="pszt1/fast">
@@ -45,38 +47,40 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v4-rev4/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/c++/backward"/>
+					<Add directory="C:/Users/jedrek/ClionProjects/pszt1/allegro-5.0.10-mingw-4.7.0/include"/>
+					<Add directory="C:/Users/jedrek/ClionProjects/pszt1/SFML-2.4.1/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 pszt1/fast"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 pszt1/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~2/X86_64~1.2-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~2/X86_64~1.0-R/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -118,6 +122,9 @@
 		</Unit>
 		<Unit filename="C:/Users/jedrek/ClionProjects/pszt1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/jedrek/ClionProjects/pszt1/cmake_modules/FindSFML.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

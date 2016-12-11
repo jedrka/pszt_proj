@@ -34,6 +34,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.6.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeSystem.cmake"
+  "../cmake_modules/FindSFML.cmake"
   )
 
 # The corresponding makefile is:

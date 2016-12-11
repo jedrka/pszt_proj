@@ -18,6 +18,9 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -57,17 +60,18 @@ include CMakeFiles/pszt1.dir/progress.make
 include CMakeFiles/pszt1.dir/flags.make
 
 CMakeFiles/pszt1.dir/main.cpp.obj: CMakeFiles/pszt1.dir/flags.make
+CMakeFiles/pszt1.dir/main.cpp.obj: CMakeFiles/pszt1.dir/includes_CXX.rsp
 CMakeFiles/pszt1.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jedrek\ClionProjects\pszt1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pszt1.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pszt1.dir\main.cpp.obj -c C:\Users\jedrek\ClionProjects\pszt1\main.cpp
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pszt1.dir\main.cpp.obj -c C:\Users\jedrek\ClionProjects\pszt1\main.cpp
 
 CMakeFiles/pszt1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pszt1.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jedrek\ClionProjects\pszt1\main.cpp > CMakeFiles\pszt1.dir\main.cpp.i
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jedrek\ClionProjects\pszt1\main.cpp > CMakeFiles\pszt1.dir\main.cpp.i
 
 CMakeFiles/pszt1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pszt1.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jedrek\ClionProjects\pszt1\main.cpp -o CMakeFiles\pszt1.dir\main.cpp.s
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jedrek\ClionProjects\pszt1\main.cpp -o CMakeFiles\pszt1.dir\main.cpp.s
 
 CMakeFiles/pszt1.dir/main.cpp.obj.requires:
 
@@ -81,17 +85,18 @@ CMakeFiles/pszt1.dir/main.cpp.obj.provides.build: CMakeFiles/pszt1.dir/main.cpp.
 
 
 CMakeFiles/pszt1.dir/SolverDFS.cpp.obj: CMakeFiles/pszt1.dir/flags.make
+CMakeFiles/pszt1.dir/SolverDFS.cpp.obj: CMakeFiles/pszt1.dir/includes_CXX.rsp
 CMakeFiles/pszt1.dir/SolverDFS.cpp.obj: ../SolverDFS.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jedrek\ClionProjects\pszt1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pszt1.dir/SolverDFS.cpp.obj"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pszt1.dir\SolverDFS.cpp.obj -c C:\Users\jedrek\ClionProjects\pszt1\SolverDFS.cpp
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pszt1.dir\SolverDFS.cpp.obj -c C:\Users\jedrek\ClionProjects\pszt1\SolverDFS.cpp
 
 CMakeFiles/pszt1.dir/SolverDFS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pszt1.dir/SolverDFS.cpp.i"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jedrek\ClionProjects\pszt1\SolverDFS.cpp > CMakeFiles\pszt1.dir\SolverDFS.cpp.i
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jedrek\ClionProjects\pszt1\SolverDFS.cpp > CMakeFiles\pszt1.dir\SolverDFS.cpp.i
 
 CMakeFiles/pszt1.dir/SolverDFS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pszt1.dir/SolverDFS.cpp.s"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jedrek\ClionProjects\pszt1\SolverDFS.cpp -o CMakeFiles\pszt1.dir\SolverDFS.cpp.s
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jedrek\ClionProjects\pszt1\SolverDFS.cpp -o CMakeFiles\pszt1.dir\SolverDFS.cpp.s
 
 CMakeFiles/pszt1.dir/SolverDFS.cpp.obj.requires:
 
@@ -105,17 +110,18 @@ CMakeFiles/pszt1.dir/SolverDFS.cpp.obj.provides.build: CMakeFiles/pszt1.dir/Solv
 
 
 CMakeFiles/pszt1.dir/ModelSzachy.cpp.obj: CMakeFiles/pszt1.dir/flags.make
+CMakeFiles/pszt1.dir/ModelSzachy.cpp.obj: CMakeFiles/pszt1.dir/includes_CXX.rsp
 CMakeFiles/pszt1.dir/ModelSzachy.cpp.obj: ../ModelSzachy.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jedrek\ClionProjects\pszt1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pszt1.dir/ModelSzachy.cpp.obj"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pszt1.dir\ModelSzachy.cpp.obj -c C:\Users\jedrek\ClionProjects\pszt1\ModelSzachy.cpp
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pszt1.dir\ModelSzachy.cpp.obj -c C:\Users\jedrek\ClionProjects\pszt1\ModelSzachy.cpp
 
 CMakeFiles/pszt1.dir/ModelSzachy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pszt1.dir/ModelSzachy.cpp.i"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jedrek\ClionProjects\pszt1\ModelSzachy.cpp > CMakeFiles\pszt1.dir\ModelSzachy.cpp.i
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jedrek\ClionProjects\pszt1\ModelSzachy.cpp > CMakeFiles\pszt1.dir\ModelSzachy.cpp.i
 
 CMakeFiles/pszt1.dir/ModelSzachy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pszt1.dir/ModelSzachy.cpp.s"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jedrek\ClionProjects\pszt1\ModelSzachy.cpp -o CMakeFiles\pszt1.dir\ModelSzachy.cpp.s
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jedrek\ClionProjects\pszt1\ModelSzachy.cpp -o CMakeFiles\pszt1.dir\ModelSzachy.cpp.s
 
 CMakeFiles/pszt1.dir/ModelSzachy.cpp.obj.requires:
 
@@ -129,17 +135,18 @@ CMakeFiles/pszt1.dir/ModelSzachy.cpp.obj.provides.build: CMakeFiles/pszt1.dir/Mo
 
 
 CMakeFiles/pszt1.dir/StateSzachownica.cpp.obj: CMakeFiles/pszt1.dir/flags.make
+CMakeFiles/pszt1.dir/StateSzachownica.cpp.obj: CMakeFiles/pszt1.dir/includes_CXX.rsp
 CMakeFiles/pszt1.dir/StateSzachownica.cpp.obj: ../StateSzachownica.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jedrek\ClionProjects\pszt1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pszt1.dir/StateSzachownica.cpp.obj"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pszt1.dir\StateSzachownica.cpp.obj -c C:\Users\jedrek\ClionProjects\pszt1\StateSzachownica.cpp
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pszt1.dir\StateSzachownica.cpp.obj -c C:\Users\jedrek\ClionProjects\pszt1\StateSzachownica.cpp
 
 CMakeFiles/pszt1.dir/StateSzachownica.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pszt1.dir/StateSzachownica.cpp.i"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jedrek\ClionProjects\pszt1\StateSzachownica.cpp > CMakeFiles\pszt1.dir\StateSzachownica.cpp.i
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jedrek\ClionProjects\pszt1\StateSzachownica.cpp > CMakeFiles\pszt1.dir\StateSzachownica.cpp.i
 
 CMakeFiles/pszt1.dir/StateSzachownica.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pszt1.dir/StateSzachownica.cpp.s"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jedrek\ClionProjects\pszt1\StateSzachownica.cpp -o CMakeFiles\pszt1.dir\StateSzachownica.cpp.s
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jedrek\ClionProjects\pszt1\StateSzachownica.cpp -o CMakeFiles\pszt1.dir\StateSzachownica.cpp.s
 
 CMakeFiles/pszt1.dir/StateSzachownica.cpp.obj.requires:
 
@@ -153,17 +160,18 @@ CMakeFiles/pszt1.dir/StateSzachownica.cpp.obj.provides.build: CMakeFiles/pszt1.d
 
 
 CMakeFiles/pszt1.dir/SolverH.cpp.obj: CMakeFiles/pszt1.dir/flags.make
+CMakeFiles/pszt1.dir/SolverH.cpp.obj: CMakeFiles/pszt1.dir/includes_CXX.rsp
 CMakeFiles/pszt1.dir/SolverH.cpp.obj: ../SolverH.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jedrek\ClionProjects\pszt1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pszt1.dir/SolverH.cpp.obj"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pszt1.dir\SolverH.cpp.obj -c C:\Users\jedrek\ClionProjects\pszt1\SolverH.cpp
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pszt1.dir\SolverH.cpp.obj -c C:\Users\jedrek\ClionProjects\pszt1\SolverH.cpp
 
 CMakeFiles/pszt1.dir/SolverH.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pszt1.dir/SolverH.cpp.i"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jedrek\ClionProjects\pszt1\SolverH.cpp > CMakeFiles\pszt1.dir\SolverH.cpp.i
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jedrek\ClionProjects\pszt1\SolverH.cpp > CMakeFiles\pszt1.dir\SolverH.cpp.i
 
 CMakeFiles/pszt1.dir/SolverH.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pszt1.dir/SolverH.cpp.s"
-	C:\PROGRA~1\MINGW-~2\X86_64~1.2-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jedrek\ClionProjects\pszt1\SolverH.cpp -o CMakeFiles\pszt1.dir\SolverH.cpp.s
+	C:\PROGRA~1\MINGW-~2\X86_64~1.0-R\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jedrek\ClionProjects\pszt1\SolverH.cpp -o CMakeFiles\pszt1.dir\SolverH.cpp.s
 
 CMakeFiles/pszt1.dir/SolverH.cpp.obj.requires:
 
@@ -193,6 +201,11 @@ pszt1.exe: CMakeFiles/pszt1.dir/ModelSzachy.cpp.obj
 pszt1.exe: CMakeFiles/pszt1.dir/StateSzachownica.cpp.obj
 pszt1.exe: CMakeFiles/pszt1.dir/SolverH.cpp.obj
 pszt1.exe: CMakeFiles/pszt1.dir/build.make
+pszt1.exe: ../SFML-2.4.1/lib/libsfml-system-d.a
+pszt1.exe: ../SFML-2.4.1/lib/libsfml-window-d.a
+pszt1.exe: ../SFML-2.4.1/lib/libsfml-graphics-d.a
+pszt1.exe: ../SFML-2.4.1/lib/libsfml-network-d.a
+pszt1.exe: ../SFML-2.4.1/lib/libsfml-audio-d.a
 pszt1.exe: CMakeFiles/pszt1.dir/linklibs.rsp
 pszt1.exe: CMakeFiles/pszt1.dir/objects1.rsp
 pszt1.exe: CMakeFiles/pszt1.dir/link.txt
